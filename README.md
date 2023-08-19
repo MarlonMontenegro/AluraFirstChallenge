@@ -9,3 +9,5 @@ Welcome to the Alura WebDev Challenge repository! This repository hosts a compre
 - Develop skills in styling and creating interactive elements.
 - Receive support and insights from a vibrant learner community.
 - Launch your web development journey with a solid foundation.
+
+![image](https://github.com/MarlonMontenegro/AluraFirstChallenge/assets/103525183/a5131453-1998-44e9-ba27-e2a5a2726d9a)
