@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--============CSS==============-->
+    <link rel="stylesheet" href="style.css"/>
+    <!--============ICONS==============-->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+    <!--============FONTS==============-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,300&display=swap"
+          rel="stylesheet">
+    <link rel="icon" href="./img/logo.png" type="image/png">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+<!--============LOGO==============-->
+<img src="./img/logo.png" alt="logo" class="logo">
+<!--============LEFT SIDE==============-->
+<div class="left-box">
+    <div class="container-textArea">
+        <h2>ENCRIPTADOR DE TEXTO</h2>
+        <form>
+            <textarea placeholder="Escribe una Frase..." class="textArea"></textarea>
+            <div class="buttons-container">
+                <p class="alert-text" id="alert-text"><i class="fa-solid fa-circle-exclamation"></i> Solo letras
+                    minusculas y sin
+                    acentos.</p>
+                <button class="encript animation-btn" role="button" onclick="btnEncryption()">Encriptar</button>
+                <button class="decript animation-btn" role="button" onclick="btnDecryption()">Desenciptar</button>
+            </div>
+        </form>
+    </div>
+</div>
+<!--============RIGHT SIDE==============-->
+<div class="right-box">
+    <textarea cols="30" rows="10" id="area-message" class="area-message"></textarea>
+    <div class="message-box" id="result-area">
+        <a><img src="img/Muñeco.png" id="result-img"></a>
+        <h2>Ningun mensaje fue encontrado</h2>
+        <p>Ingresa el texto que desees Encriptar o Desenciptar</p>
+    </div>
+    <p id="result" style="display:none" class="result"></p>
+    <div class="buttons-container-message">
+        <button class="copy-button animation-btn" role="button" onclick="btnCopy()">copiar</button>
+    </div>
+</div>
+<!--============FOOTER==============-->
+<footer class="footer">
+    <p>
+        Copyright ©
+        <script>
+            document.write(new Date().getFullYear());
+        </script>
+        Marlon Montenegro
+    </p>
+    <a href="https://github.com/MarlonMontenegro" target="blank">
+        <i class="fa-brands fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/montenergopaz" target="blank">
+        <i class="fa-brands fa-linkedin" style="color: #050505;"></i>
+    </a>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
